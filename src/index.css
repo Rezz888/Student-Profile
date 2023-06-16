@@ -1,13 +1,128 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #ebebeb;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 868px;
+  margin: auto;
+  background-color: #fff;
+}
+.card-container {
+  border-radius: 10px;
+  border-top: solid #dcdcdc 2px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  color: #333;
+  padding: 20px 13px;
+  position: relative;
+}
+.grade-list {
+  background-color: #fff;
+  color: #333;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.grade-list-show {
+  background-color: #fff;
+  color: #333;
+  margin-bottom: 2%;
+}
+
+ul li {
+  margin-left: 22.5%;
+  font-size: 2.2rem;
+  font-weight: 600;
+  list-style-type: none;
+}
+
+.card h1 {
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.card h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.card img {
+  border: solid #dcdcdc 1px;
+  border-radius: 50%;
+  width: 17%;
+  height: 17%;
+  margin-right: 5%;
+}
+
+.search-bar {
+  border: none;
+  width: 100%;
+  height: 4vh;
+  font-size: 2rem;
+}
+
+input.search-bar:focus {
+  outline-width: 0;
+}
+
+span {
+  position: absolute;
+  font-size: 10rem;
+  color: #c0c0c0;
+  top: -4rem;
+  right: 0;
+  cursor: pointer;
+}
+span:hover {
+  color: black;
+}
+
+.tags {
+  margin-left: 6%;
+}
+.tag-div {
+  display: flex;
+  margin-left: 16%;
+}
+.tagPiece {
+  background: #dcdcdc;
+  width: 100%;
+  max-width: 70px;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+input.tag-input {
+  border: none;
+  height: 4vh;
+  font-size: 2rem;
+  margin-left: 18%;
+  border-bottom: solid #dcdcdc 1px;
+  margin-bottom: 3%;
+}
+input.tag-input:focus {
+  outline-width: 0;
 }
